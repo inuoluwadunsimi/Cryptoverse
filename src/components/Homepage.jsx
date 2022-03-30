@@ -11,7 +11,7 @@ const {Title} = Typography
 function Homepage() {
   
 
-  const {data,isFetching}= useGetCrptosQuery()
+  const {data,isFetching}= useGetCrptosQuery(10)
 
   const globalStats = data?.data?.stats
 
