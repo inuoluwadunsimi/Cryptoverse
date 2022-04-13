@@ -4,6 +4,7 @@ import millify from 'millify'
 import {Link} from 'react-router-dom'
 import {Card,Row,Col,Input} from 'antd'
 import {useGetCrptosQuery} from '../services/cryptoApi'
+import Loader from './Loader'
 
 
 
@@ -23,7 +24,7 @@ function Cryptocurrencies({simplified}) {
   
 
 
-  if (isFetching) return 'Loading...'
+  if (isFetching) return <Loader/>
 
 
 
